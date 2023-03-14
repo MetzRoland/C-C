@@ -1,0 +1,33 @@
+.intrudiction{
+    font-size: 2rem;
+    color: var(--color-font-dark);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10rem;
+}
+
+.intrudiction__title{
+    font-size: 4.8rem;
+}
+
+.offers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+
+    margin: 10rem;
+}
+
+.offers__div{
+    color: var(--color-font-dark);
+    background-color: var(--background-color-light-2);
+
+    width: 40rem;
+    height: 50rem;
+
+    box-shadow: var(--shadow-main-2);
+}

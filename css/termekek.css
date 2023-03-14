@@ -1,0 +1,138 @@
+.description{
+    color: var(--color-font-dark);
+    text-align: center;
+    margin: 10rem;
+}
+
+.description__title{
+    font-size: 4.8rem;
+    text-transform: uppercase;
+}
+
+.description__text{
+    font-size: 2.5rem;
+}
+
+.product__type{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    margin: 2.5rem;
+}
+
+.product__type--link{
+    background-color: var(--background-color-dark);
+    color: var(--color-font-light);
+    border: none;
+
+    width: 20%;
+    height: 5rem;
+
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all .5s;
+}
+
+.product__type--link:hover, .product__type--link:active{
+    background-color: var(--background-color-mid);
+    transform: scale(1.05);
+}
+
+.product__type--link--active{
+    background-color: var(--background-color-mid);
+}
+
+.products{
+    margin: 15rem 5rem 15rem 5rem;
+}
+
+.products__list{
+    display: none;
+}
+
+.products__list--active{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+
+    place-items: center;
+    list-style-type: none;
+    gap: 10rem;
+}
+
+.product__list--item{
+    width: 30rem;
+    height: 50rem;
+
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+
+    background-color: var(--background-color-light-2);
+
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    transition: all .5s;
+    cursor: pointer;
+
+    box-shadow: var(--shadow-main-2);
+}
+
+.product__list--item:hover{
+    transform: scale(1.05);
+}
+
+.product__description{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product__flex--div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    place-items: center;
+
+    color: var(--color-font-dark);
+    font-size: 2rem;
+}
+
+.product__title{
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.buy__button{
+    border: none;
+    font-size: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+
+    width: 15rem;
+    height: 5rem;
+
+    background-color: var(--background-color-dark);
+    color: var(--color-font-light);
+
+    border-radius: 10px;
+    transition: all .5s;
+}
+
+.buy__button:hover, .buy__button:active{
+    background-color: var(--background-color-mid);
+}
+
+.product__img{
+    width: 100%;
+    height: 25rem;
+}
