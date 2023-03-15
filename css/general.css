@@ -128,13 +128,8 @@ body{
 }
 
 /* Media queries */
-@media only screen and (max-width: 1200px){
-    html{
-        font-size: 50%;
-    }
-}
 
-@media only screen and (max-width: 1000px){
+@media only screen and (max-width: 1500px){
     .main-container{
         margin: 0;
         width: 100vw;
@@ -142,8 +137,25 @@ body{
     }
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    html{
+        font-size: 66.6%;
+    }
+
+    .main-container{
+        grid-template-rows: 8.5rem minmax(75rem,auto) auto;
+    }
+
     .contacts{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
     }
 }
