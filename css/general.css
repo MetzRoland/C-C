@@ -126,3 +126,18 @@ body{
 
     fill: var(--color-font-light);
 }
+
+/* Media queries */
+@media only screen and (max-width: 1200px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .main-container{
+        margin: 0;
+        width: 100vw;
+        border-radius: 0;
+    }
+}

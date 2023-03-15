@@ -1,0 +1,97 @@
+.contact__form__div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    place-items: center;
+    gap: 3rem;
+
+    margin: 10rem;
+    padding: 5rem;
+    background-color: var(--background-color-light-2);
+    color: var(--color-font-dark);
+    border-radius: 10px;
+
+    box-shadow: var(--shadow-main-2);
+}
+
+.contact__form__description{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+.contact__form__title{
+    font-size: 4.8rem;
+}
+
+.contact__form__text{
+    font-size: 2.5rem;
+}
+
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input__el{
+    margin: 1rem;
+}
+
+.input__form{
+    width: 50rem;
+    height: 3rem;
+    background-color: var(--background-color-light-1);
+    border: none;
+    border-radius: 10px;
+
+    color: var(--color-font-dark);
+    font-size: 2rem;
+    font-family: inherit;
+}
+
+.input__form:focus{
+    outline: 2px solid var(--color-font-dark);
+}
+
+.input__label{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.input__textarea{
+    height: 10rem;
+    resize: none;
+}
+
+.contact__submit__div{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__button{
+    background-color: var(--background-color-dark);
+    color: var(--color-font-light);
+    border: none;
+
+    text-transform: uppercase;
+
+    width: 20%;
+    height: 5rem;
+
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: all .5s;
+}
+
+.contact__button:hover, .contact__button:active{
+    background-color: var(--background-color-mid);
+    transform: scale(1.05);
+}
