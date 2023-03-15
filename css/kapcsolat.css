@@ -97,6 +97,16 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 1500px){
+@media only screen and (max-width: 860px){
+    html{
+        font-size: 50%;
+    }
+
+    .contact__form__title{
+        font-size: 4rem;
+    }
     
+    .contact__form__text{
+        font-size: 2rem;
+    }
 }

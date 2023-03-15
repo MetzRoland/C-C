@@ -138,6 +138,129 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 1500px){
-    
+@media only screen and (max-width: 1280px){
+    .products__list--active{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .product__list--item{
+        width: 30rem;
+        height: 50rem;
+    }
+}
+
+@media only screen and (max-width: 1280px){
+    html{
+        font-size: 66.6%;
+    }
+}
+
+@media only screen and (max-width: 1050px){
+    .main-container{
+        grid-template-rows: 8.5rem minmax(75rem,auto) auto;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .contacts{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .social-media{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        place-items: center;
+    }
+
+    html{
+        font-size: 75%;
+    }
+
+    .copyright__div{
+        font-size: 1.5rem;
+    }
+
+    .products__list--active{
+        grid-template-columns: 1fr;
+    }
+
+    .product__list--item{
+        width: 30rem;
+        height: 50rem;
+    }
+
+    .product__type{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+
+        gap: 3rem;
+    }
+
+    .product__type--link{
+        width: 75%;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    .main-container{
+        grid-template-rows: auto minmax(75rem,auto) auto;
+    }
+
+    .main__nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+
+        gap: 0.2rem;
+
+        height: 100%;
+        width: 100vw;
+    }
+
+    .main__nav--item,.main,.footer{
+        width: 100vw;
+    }
+
+    .main__nav--item{
+        font-size: 3rem;
+    }
+
+    .product__type{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+        place-items: center;
+
+        gap: 3rem;
+    }
+
+    .product__type--link{
+        width: 75%;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    html{
+        font-size: 66.6%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
 }

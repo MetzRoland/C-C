@@ -77,4 +77,33 @@
         width: 45%;
         height: 6.25rem;
     }
+
+    .about__buttons{
+        justify-content: space-between;
+    }
+
+    html{
+        font-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .about__buttons{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+        gap: 3rem;
+    }
+
+    .about__button{
+        width: 75%;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    html{
+        font-size: 75%;
+    }
 }
