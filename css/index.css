@@ -71,3 +71,10 @@
         height: 6.25rem;
     }
 }
+
+@media only screen and (max-width: 725px){
+    .about__button{
+        width: 45%;
+        height: 6.25rem;
+    }
+}

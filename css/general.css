@@ -159,3 +159,25 @@ body{
         place-items: center;
     }
 }
+
+@media only screen and (max-width: 725px){
+    .contacts{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .social-media{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        place-items: center;
+    }
+
+    html{
+        font-size: 75%;
+    }
+
+    .copyright__div{
+        font-size: 1.5rem;
+    }
+}
