@@ -97,16 +97,164 @@
 }
 
 /* Media queries */
-@media only screen and (max-width: 860px){
+
+@media only screen and (max-width: 1100px){
     html{
-        font-size: 50%;
+        font-size: 66.6%;
     }
 
+    .main-container{
+        grid-template-rows: 8.5rem minmax(75rem,auto) auto;
+    }
+
+    .contacts{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        place-items: center;
+    }
+
+    .contact__button{
+        width: 30%;
+        height: 5rem;
+    }
+}
+
+@media only screen and (max-width: 1000px){
     .contact__form__title{
         font-size: 4rem;
     }
     
     .contact__form__text{
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 890px){
+    .contact__form__div{
+        margin: 5rem;
+        padding: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 725px){
+    .contacts{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .social-media{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        place-items: center;
+    }
+
+    .contact__form__div{
+        gap: 5rem;
+        
+    }
+
+    html{
+        font-size: 75%;
+    }
+
+    .copyright__div{
+        font-size: 1.5rem;
+    }
+
+    .contact__form__div{
+        margin: 10rem 3rem 10rem 3rem;
+        padding: 1rem;
+    }
+
+    .contact__form__title{
+        font-size: 3rem;
+    }
+    
+    .contact__form__text{
+        font-size: 2rem;
+    }
+
+    .main-container{
+        grid-template-rows: auto minmax(75rem,auto) auto;
+    }
+
+    .main__nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        place-items: center;
+
+        gap: 0.2rem;
+
+        height: 100%;
+        width: 100vw;
+    }
+
+    .main__nav--item,.main,.footer{
+        width: 100vw;
+    }
+
+    .input__el{
+        margin: 1rem;
+    }
+    
+    .input__form{
+        width: 35rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (max-width: 660px){
+    html{
+        font-size: 66.6%;
+    }
+
+    .input__form{
+        width: 30rem;
+        height: 3rem;
+    }
+
+    .contact__form__title{
+        font-size: 2.5rem;
+    }
+    
+    .contact__form__text{
+        font-size: 1.5rem;
+    }
+
+    .input__label{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .contact__form__title{
+        font-size: 2.5rem;
+    }
+    
+    .contact__form__text{
+        font-size: 2rem;
+    }
+
+    .input__label{
+        font-size: 2rem;
+        text-transform: uppercase;
+    }
+
+    .input__form{
+        width: 25rem;
+        height: 2.5rem;
+    }
+
+    .contact__button{
+        width: 40%;
+        height: 5rem;
+    }
+
+    html{
+        font-size: 50%;
     }
 }
