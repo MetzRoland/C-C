@@ -141,3 +141,9 @@ body{
         border-radius: 0;
     }
 }
+
+@media only screen and (max-width: 800px){
+    .contacts{
+        flex-direction: column;
+    }
+}
