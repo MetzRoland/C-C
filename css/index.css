@@ -49,6 +49,10 @@
     text-decoration: none;
     border: none;
 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
     width: 30%;
     height: 5rem;
 
@@ -65,10 +69,26 @@
 }
 
 /* Media queris */
+@media only screen and (max-width: 1200px){
+    .about__button{
+        width: 40%;
+        height: 6.25rem;
+    }
+    
+    .about__div{
+        margin: 2.5rem;
+    }
+}
+
+
 @media only screen and (max-width: 850px){
     .about__button{
         width: 40%;
         height: 6.25rem;
+    }
+    
+    .about__div{
+        margin: 2.5rem;
     }
 }
 
@@ -83,13 +103,17 @@
     }
 
     html{
-        font-size: 75%;
+        font-size: 65%;
     }
 }
 
 @media only screen and (max-width: 650px){
     .about__div{
         margin: 5rem;
+    }
+
+    html{
+        font-size: 50%;
     }
 }
 

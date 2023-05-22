@@ -41,6 +41,10 @@
     transform: scale(1.05);
 }
 
+/* .product__type--link--active{
+    background-color: var(--background-color-mid);
+} */
+
 .products{
     margin: 15rem 5rem 15rem 5rem;
 }
